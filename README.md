@@ -46,15 +46,16 @@ Try the following:
 - Pushing - Pushing the commits to the remote so that the changes are reflected in the GitHub.
 - Pulling - Pulling the the commits from the remote to the local Clone.
 
-Try this:  
+**Try this:**  
 - Create a file using the explorer.
 - Go to Source control **Ctrl+Shift+G**, Stage the changes using the "+" icon near the file name.
 - Enter a commit message in the message box above the commit button.
 - Click the dropdown near the commit button and click commit and push.
 - Now check the GitHub repo for the changes you pushed.
 
+**Note:** To revert back any uncommited changes in your code, go to source control and click the discard changes icon.
 
-Reference:  
+**Reference:**  
 - [How to commit and push your changes to the repo](https://docs.github.com/en/codespaces/developing-in-a-codespace/using-source-control-in-your-codespace#committing-your-changes)
 
 
