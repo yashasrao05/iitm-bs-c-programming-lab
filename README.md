@@ -1,4 +1,4 @@
-# iitm-bs-c-programming-lab
+# IITM BS - C programming lab
 
 ## Instructions
 
