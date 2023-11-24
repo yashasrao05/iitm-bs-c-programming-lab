@@ -29,17 +29,54 @@ Try the following:
 
 ### Source control
 
+#### The GitHub lingo
+- **Git** - A Source code versioning system with a command line tool.
+- **GitHub** - A cloud service for managing source code.
+- **Repo(Repository)** - A folder which has an inbuilt versioning system(simply speaking a folder with a .git subfolder with the version details.).
+- **Repo in GitHub** - A **repo** present in the GitHub Cloud.
+- **Fork** - A copy of a **repo** which is also present in GitHub.
+- **Clone** - A copy of a **repo** in your local machine.
+- **CodeSpaces** - A virtual machine with the **Clone** of your repo that you can access online or using visual studio code.
+- **Remote** - The original repo in the GitHub from which you cloned the local copy.
+
+#### Basic Versioning
+
+- Staging - Selecting which changes to save in the local clone.
+- Commiting - Saving the changes in the local clone.
+- Pushing - Pushing the commits to the remote so that the changes are reflected in the GitHub.
+- Pulling - Pulling the the commits from the remote to the local Clone.
+
+Try this:  
+- Create a file using the explorer.
+- Go to Source control **Ctrl+Shift+G**, Stage the changes using the "+" icon near the file name.
+- Enter a commit message in the message box above the commit button.
+- Click the dropdown near the commit button and click commit and push.
+- Now check the GitHub repo for the changes you pushed.
 
 
+Reference:  
 - [How to commit and push your changes to the repo](https://docs.github.com/en/codespaces/developing-in-a-codespace/using-source-control-in-your-codespace#committing-your-changes)
 
-- 
 
 ### Terminal 
 
-## Syncing Code spaces with the repo (The Push and the Pull)
+#### Basic Terminal commands
+- pwd - prints the current working directory
+- ls - list the files in the current working directory
+- cd - change the current working directory.
 
-### Source control with UI
+#### Compiling and running a C source file in terminal
+- Use cd to go to the directory where the the file.
+```bash
+cd path/to/the/source/file
+```
+- Compile the Code. If you
+```bash
+gcc source_file.c -o source_file
+```
 
-### (Optional) Source control with git commands
+- Run the Compiled executable file.
+```bash
+./source_file
+```
 
