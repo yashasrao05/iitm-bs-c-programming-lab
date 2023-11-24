@@ -27,6 +27,9 @@ This will give us an interactive prompt where we can type further commands.  Som
     - `list <n>`: by specifying a number `<n>`, you can start listing from that line number.  So once you reach the end of the file for example you can go back to any other place like this.
     - `list <source>:<n>`: if your executable consists of multiple source files, you can specify the source file name here
 - `run`: Run the program - assumes you have already loaded the program by giving it as part of the command line.  Will try to run all the way to the end, unless there is a *breakpoint* or some error occurs
+    - `c` or `continue`: resume running the program until it hits the next breakpoint
+    - `s` or `step`: step into the next line of code.  If that calls a function go into that function
+    - `n` or `next`: step *over* the next line of code.  If that calls a function execute the function without stepping through each line.
 - `info`: Used to get information about various aspects of your code
     - `info break`: display list of breakpoints you have set
     - `info watch`: display variables being watched
@@ -37,6 +40,17 @@ This will give us an interactive prompt where we can type further commands.  Som
 - `watch <expr>`: Print the value of the expression any time there is a *change* in value.  Good for automatically detecting updates.  Can also be used with a variable name to see any time the variable changes.
     - ***Important***: The variable *must* be in scope, else you get an error.  This is a common source of problems while debugging
 - `bt`: (short for *backtrace*): this shows you the stack trace - list of functions that have been called up to this point.  You can move up and down within the trace and examine variables at different levels.
+
+## Useful references
+
+- Official reference: https://sourceware.org/gdb/current/onlinedocs/gdb.html/
+- https://bob.cs.sonoma.edu/IntroCompOrg-RPi/sec-gdb1.html
+- Several online tutorials/examples
+- Other debuggers:
+    - https://sourceware.org/gdb/wiki/GDB%20Front%20Ends
+    - Visual Studio
+    - ...
+
 
 ## Assignment
 
