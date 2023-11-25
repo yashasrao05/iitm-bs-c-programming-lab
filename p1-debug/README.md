@@ -9,7 +9,7 @@ Some basic instructions that can be helpful for debugging are given here.  The l
 First we need to compile the program with debugging enabled.  For this we provide the `-g` flag to the `gcc` compiler.
 
 ```sh
-gcc -g ex1-prime-c -o ex1-prime
+gcc -g ex1-prime.c -o ex1-prime
 ```
 
 We can then start the debugger using the command
