@@ -83,13 +83,13 @@ Write a program in C that will read the template file and the CSV file, and gene
 
 ### Code structure
 
-You are required to define a `struct` type called `student` that holds the required information.  The struct should contain strings and numeric types as required to store the information.  The strings should be of maximum length 20 characters, and the marks should be a non-negative integer.
+You are required to define a `struct` type called `student_t` that holds the required information.  The struct should contain strings and numeric types as required to store the information.  The strings should be of maximum length 20 characters, and the marks should be a non-negative integer.
 
 Define functions for the following:
 
 - `read_csv`: should read from a given filename and return an array of structs
-- `compute_grade(student)`: take a student struct as input and return the grade
-- `write_file(student)`: create a file for the given roll number and write the output
+- `compute_grade(student_t)`: take a student struct as input and return the grade
+- `write_file(student_t)`: create a file for the given roll number and write the output
 
 ### Useful functions
 
