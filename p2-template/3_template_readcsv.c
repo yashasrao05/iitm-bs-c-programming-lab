@@ -45,7 +45,7 @@ void compute_grade(student_t* sptr) {
 
 int read_csv(char* filename, student_t s_array[MAX_STUDENTS]) {
     // Open a file for reading
-    FILE* fp = fopen(filename, "r");
+    FILE *fp = fopen(filename, "r");
     int num = 0;
 
     char buf[MAX_STRING];

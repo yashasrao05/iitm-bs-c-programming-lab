@@ -17,7 +17,6 @@ void read_mat(char* filename, float A[M][M]) {
     for (int i = 0; i < M; i++) {
         for (int j = 0; j < M; ++j) {
             fscanf(file, "%f", &A[i][j]);
-            return;
         }
     }
     fclose(file);
@@ -37,8 +36,14 @@ void matmul(float A[M][M], float B[M][M], float C[M][M]) {
  * A[0][0] A[0][1] A[0][2]
  * A[1][0] A[1][1] ... etc.
  */
-void print_mat(float A[M][M]) {
 
+void print_mat(float A[M][M]) {
+    for (int i = 0; i < M; i++) {
+        for (int j = 0; j < M; ++j) {
+            printf("%.4", A[i][j]);
+        }
+    print("\n");
+    }
 }
 
 int main() {
