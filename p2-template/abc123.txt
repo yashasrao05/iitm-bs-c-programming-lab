@@ -1,0 +1,10 @@
+To,
+Nitin C (roll no. abc123)
+Student of BS-ES course, IIT Madras
+
+Dear Nitin C,
+
+You scored 50 marks in the exam, and your grade is D.
+
+Sincerely,
+The Dean

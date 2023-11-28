@@ -3,27 +3,44 @@
 #define MAX_STRING   200
 
 typedef struct {
-    // Following members needed in struct:
-    // - name: string
-    // - roll number: string
-    // - marks: integer
-    // - grade: char
-
+    char name[20];
+    char rollno[20];
+    int marks;
+    char grade;
 } student_t;
 
 void print_student(student_t s) {
-    // Output should look like the following:
-    // Nitin C (abc123) got grade D with 50 marks
-
-    // Fill in the correct info for the "_" values and the "..."
-    printf("%_ (%_) for grade %_ with %_ marks\n", ...);
+    printf("%s (%s) got grade %c with %d marks\n", s.name, s.rollno, s.grade, s.marks);
 }
 
 void compute_grade(student_t* sptr) {
-    if (sptr->marks >= 90) sptr->grade = 'S';
-    else if 
-    else if
-    else ;
+    if (sptr->marks >= 90){
+        sptr->grade = 'S';
+    }
+
+    else if ((sptr->marks >= 80) && (sptr->marks < 90)){
+        sptr->grade = 'A';
+    }
+    
+    else if ((sptr->marks >= 70) && (sptr->marks < 80)){
+        sptr->grade = 'B';
+    }
+
+    else if ((sptr->marks >= 60) && (sptr->marks < 70)){
+        sptr->grade = 'C';
+    }
+
+    else if ((sptr->marks >= 50) && (sptr->marks < 60)){
+        sptr->grade = 'D';
+    }
+
+    else if ((sptr->marks >= 40) && (sptr->marks < 50)){
+        sptr->grade = 'E';
+    }
+
+    else{
+        sptr->grade = 'U';
+    }
 }
 
 int main() {

@@ -1,0 +1,10 @@
+To,
+Richard Feynman (roll no. xyz987)
+Student of BS-ES course, IIT Madras
+
+Dear Richard Feynman,
+
+You scored 85 marks in the exam, and your grade is A.
+
+Sincerely,
+The Dean

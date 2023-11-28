@@ -1,10 +1,11 @@
 #include<stdio.h>
 int n = 0;
-void fact(int n)
+void fact(int num)
 {
-	int i = 1;
-	for(; i <= n; i++)
-		n *= i;
+    int factorial = 1;
+    for(int i = 1; i <= num; i++)
+        factorial *= i;
+    n = factorial;
 }
 
 int main()

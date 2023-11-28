@@ -3,12 +3,10 @@
 #define MAX_STRING   200
 
 typedef struct {
-    // Following members needed in struct:
-    // - name: string
-    // - roll number: string
-    // - marks: integer
-    // - grade: char
-
+    char name[20]; // - name: string
+    char rollno[20]; // - roll number: string
+    int marks; // - marks: integer
+    char grade; // - grade: char
 } student_t;
 
 void print_student(student_t s) {
@@ -16,7 +14,7 @@ void print_student(student_t s) {
     // Nitin C (abc123) got grade D with 50 marks
 
     // Fill in the correct info for the "_" values and the "..."
-    printf("%_ (%_) for grade %_ with %_ marks\n", ...);
+    printf("%s (%s) got grade %c with %d marks\n", s.name, s.rollno, s.grade, s.marks);
 }
 
 int main() {

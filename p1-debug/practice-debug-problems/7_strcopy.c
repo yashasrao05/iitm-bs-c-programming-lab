@@ -8,6 +8,7 @@ void string_copy(char s[], char d[]){
 		d[i] = s[i];
 		i++;
 	}
+	d[i] = '\0';
 }
 
 int main(){
@@ -15,5 +16,6 @@ int main(){
 	char dst[80] = "orange";
 	string_copy(src, dst);
 	printf("%s", dst);
+	printf("\n");
 	return 0;
 }
