@@ -12,8 +12,17 @@ double gettime() {
 }
 
 void read_mat(char* filename, float A[M][M]) {
+    FILE *file = fopen(file, 'r');
 
+    for (int i = 0; i < M; i++) {
+        for (int j = 0; j < M; ++j) {
+            fscanf(file, "%f", &A[i][j]);
+            return;
+        }
+    }
+    fclose(file);
 }
+
 
 void matmul(float A[M][M], float B[M][M], float C[M][M]) {
 
