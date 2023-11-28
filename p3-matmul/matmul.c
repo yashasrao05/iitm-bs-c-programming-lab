@@ -42,7 +42,7 @@ void print_mat(float A[M][M]) {
         for (int j = 0; j < M; ++j) {
             printf("%.4", A[i][j]);
         }
-    print("\n");
+    printf("\n");
     }
 }
 
