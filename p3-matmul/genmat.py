@@ -4,7 +4,6 @@ import sys
 
 M = 10
 
-
 A = random.random((M, M))
 np.savetxt("a.txt", A, fmt='%6.4g')
 
